@@ -1,242 +1,277 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/DataDrivenFramework.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("F01_LoginLogout.feature");
 formatter.feature({
   "line": 1,
-  "name": "Fill a simple form with excel data",
+  "name": "Test the LoginLogout Feature of the application",
   "description": "",
-  "id": "fill-a-simple-form-with-excel-data",
+  "id": "test-the-loginlogout-feature-of-the-application",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4873228969,
+  "duration": 3191720261,
+  "status": "passed"
+});
+formatter.background({
+  "line": 2,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 3,
+  "name": "I am on the osCommerce homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "commonScenario.i_am_on_the_osCommerce_homepage()"
+});
+formatter.result({
+  "duration": 5075793126,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 2,
-  "name": "Data driven with excel",
+  "line": 4,
+  "name": "Valid login logout scenario",
   "description": "",
-  "id": "fill-a-simple-form-with-excel-data;data-driven-with-excel",
+  "id": "test-the-loginlogout-feature-of-the-application;valid-login-logout-scenario",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 3,
-  "name": "I open automationpractice website",
+  "line": 5,
+  "name": "I click on the \"My Account\" link",
   "keyword": "When "
 });
 formatter.step({
-  "line": 4,
-  "name": "click contact us",
-  "keyword": "And "
+  "line": 6,
+  "name": "I am logged in using valid username and valid password",
+  "keyword": "When "
 });
 formatter.step({
-  "line": 5,
-  "name": "I contact the customer service with excel row \"1\" dataset",
+  "line": 7,
+  "name": "I click on the Sign in button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 8,
+  "name": "I should see \"Log Off\" link on page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 9,
+  "name": "I will click on the \"Log Off\" link",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 10,
+  "name": "I will click on the \"Continue\" button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "I should see \"Welcome to 5ElementsLearning\" text on page.",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "I should close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DataDrivenFramework.i_open_automationpractice_website()"
+  "arguments": [
+    {
+      "val": "My Account",
+      "offset": 16
+    }
+  ],
+  "location": "loginLogout.i_click_on_the_link(String)"
 });
 formatter.result({
-  "duration": 8514000499,
+  "duration": 2110354214,
   "status": "passed"
 });
 formatter.match({
-  "location": "DataDrivenFramework.click_contact_us()"
+  "location": "loginLogout.i_am_logged_in_using_valid_username_and_valid_password()"
 });
 formatter.result({
-  "duration": 1598002399,
+  "duration": 205682834,
+  "status": "passed"
+});
+formatter.match({
+  "location": "loginLogout.i_click_on_the_Sign_in_button()"
+});
+formatter.result({
+  "duration": 2104116130,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "1",
-      "offset": 47
+      "val": "Log Off",
+      "offset": 14
     }
   ],
-  "location": "DataDrivenFramework.i_contact_the_customer_service_with_excel_row_dataset(String)"
+  "location": "loginLogout.i_should_see_link_on_page(String)"
 });
 formatter.result({
-  "duration": 603191320,
+  "duration": 73572272,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Log Off",
+      "offset": 21
+    }
+  ],
+  "location": "loginLogout.i_will_click_on_the_link(String)"
+});
+formatter.result({
+  "duration": 691778244,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Continue",
+      "offset": 21
+    }
+  ],
+  "location": "loginLogout.i_will_click_on_the_button(String)"
+});
+formatter.result({
+  "duration": 525196303,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Welcome to 5ElementsLearning",
+      "offset": 14
+    }
+  ],
+  "location": "loginLogout.i_should_see_text_on_page(String)"
+});
+formatter.result({
+  "duration": 12797445,
+  "status": "passed"
+});
+formatter.match({
+  "location": "commonScenario.i_should_close_the_browser()"
+});
+formatter.result({
+  "duration": 1177875113,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1213315061,
+  "duration": 392388,
   "status": "passed"
 });
-formatter.scenarioOutline({
-  "line": 6,
-  "name": "Data driven with excel and data sets",
-  "description": "",
-  "id": "fill-a-simple-form-with-excel-data;data-driven-with-excel-and-data-sets",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+formatter.before({
+  "duration": 2585117067,
+  "status": "passed"
 });
-formatter.step({
-  "line": 7,
-  "name": "I open automationpractice website",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "click contact us",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 9,
-  "name": "I contact the customer service with excel row \"\u003crow_index\u003e\" dataset",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 10,
+formatter.background({
+  "line": 2,
   "name": "",
   "description": "",
-  "id": "fill-a-simple-form-with-excel-data;data-driven-with-excel-and-data-sets;",
-  "rows": [
-    {
-      "cells": [
-        "row_index"
-      ],
-      "line": 11,
-      "id": "fill-a-simple-form-with-excel-data;data-driven-with-excel-and-data-sets;;1"
-    },
-    {
-      "cells": [
-        "2"
-      ],
-      "line": 12,
-      "id": "fill-a-simple-form-with-excel-data;data-driven-with-excel-and-data-sets;;2"
-    },
-    {
-      "cells": [
-        "2"
-      ],
-      "line": 13,
-      "id": "fill-a-simple-form-with-excel-data;data-driven-with-excel-and-data-sets;;3"
-    }
-  ],
-  "keyword": "Examples"
+  "type": "background",
+  "keyword": "Background"
 });
-formatter.before({
-  "duration": 5415749030,
+formatter.step({
+  "line": 3,
+  "name": "I am on the osCommerce homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "commonScenario.i_am_on_the_osCommerce_homepage()"
+});
+formatter.result({
+  "duration": 4326873285,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 12,
-  "name": "Data driven with excel and data sets",
+  "line": 14,
+  "name": "Invalid login logout scenario",
   "description": "",
-  "id": "fill-a-simple-form-with-excel-data;data-driven-with-excel-and-data-sets;;2",
+  "id": "test-the-loginlogout-feature-of-the-application;invalid-login-logout-scenario",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 7,
-  "name": "I open automationpractice website",
+  "line": 15,
+  "name": "I click on the \"My Account\" link",
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
-  "name": "click contact us",
-  "keyword": "And "
+  "line": 16,
+  "name": "I am logged in using invalid username and invalid password",
+  "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "I contact the customer service with excel row \"2\" dataset",
-  "matchedColumns": [
-    0
-  ],
+  "line": 17,
+  "name": "I click on the Sign in button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 18,
+  "name": "I should not see \"My Account Information\" on page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 19,
+  "name": "I should close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DataDrivenFramework.i_open_automationpractice_website()"
+  "arguments": [
+    {
+      "val": "My Account",
+      "offset": 16
+    }
+  ],
+  "location": "loginLogout.i_click_on_the_link(String)"
 });
 formatter.result({
-  "duration": 6758934107,
+  "duration": 822398756,
   "status": "passed"
 });
 formatter.match({
-  "location": "DataDrivenFramework.click_contact_us()"
+  "location": "loginLogout.i_am_logged_in_using_invalid_username_and_invalid_password()"
 });
 formatter.result({
-  "duration": 1795336424,
+  "duration": 147318127,
+  "status": "passed"
+});
+formatter.match({
+  "location": "loginLogout.i_click_on_the_Sign_in_button()"
+});
+formatter.result({
+  "duration": 646976065,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "2",
-      "offset": 47
+      "val": "My Account Information",
+      "offset": 18
     }
   ],
-  "location": "DataDrivenFramework.i_contact_the_customer_service_with_excel_row_dataset(String)"
+  "location": "loginLogout.i_should_not_see_on_page(String)"
 });
 formatter.result({
-  "duration": 496513003,
+  "duration": 29972781,
+  "status": "passed"
+});
+formatter.match({
+  "location": "commonScenario.i_should_close_the_browser()"
+});
+formatter.result({
+  "duration": 1259694084,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1228941633,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 5858286522,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 13,
-  "name": "Data driven with excel and data sets",
-  "description": "",
-  "id": "fill-a-simple-form-with-excel-data;data-driven-with-excel-and-data-sets;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 7,
-  "name": "I open automationpractice website",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "click contact us",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 9,
-  "name": "I contact the customer service with excel row \"2\" dataset",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "DataDrivenFramework.i_open_automationpractice_website()"
-});
-formatter.result({
-  "duration": 7253136547,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DataDrivenFramework.click_contact_us()"
-});
-formatter.result({
-  "duration": 2417068779,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2",
-      "offset": 47
-    }
-  ],
-  "location": "DataDrivenFramework.i_contact_the_customer_service_with_excel_row_dataset(String)"
-});
-formatter.result({
-  "duration": 500373425,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 1193747110,
+  "duration": 203122,
   "status": "passed"
 });
 });
